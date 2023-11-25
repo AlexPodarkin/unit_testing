@@ -31,10 +31,6 @@ class Calculation:
             raise ArithmeticError("It is impossible to extract the root from negative numbers")
         return math.sqrt(number)
 
-        # @ param purchase_amount сумма покупки
-        # @ param discount_amount размер скидки (в процентах)
-        # @ return возвращает сумму покупки с учетом скидки
-
     @staticmethod
     def calculating_discount(purchase_amount: float, discount_amount: int):
         return purchase_amount - purchase_amount * discount_amount / 100

@@ -9,10 +9,8 @@ class Store:
     def set_products(self, products):
         self.products = products
 
-    # @return отсортированный по возрастанию и цене список продуктов
     def get_sorted_list_products(self):
         return sorted(self.products, key=lambda x: x.cost)
 
-    # @return самый дорогой продукт
     def get_most_expensive_product(self):
         return max(self.products, key=lambda x: x.cost)
